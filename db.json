@@ -1,0 +1,33 @@
+{
+  "superheroes": [
+    {
+      "name": "Superman",
+      "alias": "Clark Kent",
+      "powers": ["Super strength", "Flight", "Heat vision", "X-ray vision"],
+      "affiliation": "Justice League",
+      "origin": "Krypton",
+      "first_appearance": "Action Comics #1 (1938)"
+    },
+    {
+      "name": "Spider-Man",
+      "alias": "Peter Parker",
+      "powers": [
+        "Wall-crawling",
+        "Spider-sense",
+        "Web-shooters",
+        "Super agility"
+      ],
+      "affiliation": "Avengers",
+      "origin": "Earth (Marvel Universe)",
+      "first_appearance": "Amazing Fantasy #15 (1962)"
+    },
+    {
+      "name": "Wonder Woman",
+      "alias": "Diana Prince",
+      "powers": ["Super strength", "Lasso of Truth", "Flight", "Immortality"],
+      "affiliation": "Justice League",
+      "origin": "Themyscira",
+      "first_appearance": "All Star Comics #8 (1941)"
+    }
+  ]
+}
