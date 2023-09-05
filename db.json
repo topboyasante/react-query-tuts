@@ -1,14 +1,21 @@
 {
   "superheroes": [
     {
+      "id": 1,
       "name": "Superman",
       "alias": "Clark Kent",
-      "powers": ["Super strength", "Flight", "Heat vision", "X-ray vision"],
+      "powers": [
+        "Super strength",
+        "Flight",
+        "Heat vision",
+        "X-ray vision"
+      ],
       "affiliation": "Justice League",
       "origin": "Krypton",
       "first_appearance": "Action Comics #1 (1938)"
     },
     {
+      "id": 2,
       "name": "Spider-Man",
       "alias": "Peter Parker",
       "powers": [
@@ -22,12 +29,215 @@
       "first_appearance": "Amazing Fantasy #15 (1962)"
     },
     {
+      "id": 3,
       "name": "Wonder Woman",
       "alias": "Diana Prince",
-      "powers": ["Super strength", "Lasso of Truth", "Flight", "Immortality"],
+      "powers": [
+        "Super strength",
+        "Lasso of Truth",
+        "Flight",
+        "Immortality"
+      ],
       "affiliation": "Justice League",
       "origin": "Themyscira",
       "first_appearance": "All Star Comics #8 (1941)"
+    },
+    {
+      "id": 4,
+      "name": "Batman",
+      "alias": "Bruce Wayne",
+      "powers": [
+        "Genius-level intellect",
+        "Peak human physical condition",
+        "Gadgets"
+      ],
+      "affiliation": "Justice League",
+      "origin": "Earth (DC Universe)",
+      "first_appearance": "Detective Comics #27 (1939)"
+    },
+    {
+      "id": 5,
+      "name": "Captain America",
+      "alias": "Steve Rogers",
+      "powers": [
+        "Super soldier serum",
+        "Shield mastery",
+        "Peak human physical condition"
+      ],
+      "affiliation": "Avengers",
+      "origin": "Earth (Marvel Universe)",
+      "first_appearance": "Captain America Comics #1 (1941)"
+    },
+    {
+      "name": "GarriMan",
+      "alias": "Papa Dome",
+      "id": 6
+    },
+    {
+      "name": "Asorkpor man",
+      "alias": "Daddy",
+      "id": 7
+    },
+    {
+      "name": "Asorkpor man 7",
+      "alias": "Daddy",
+      "id": 8
+    },
+    {
+      "name": "Asorkpor man 79",
+      "alias": "Daddy",
+      "id": 9
+    },
+    {
+      "name": "Lil Uzi Gari",
+      "alias": "MR Rahaman",
+      "id": 10
+    },
+    {
+      "name": "Lil Uzi Gari 6",
+      "alias": "MR Rahaman 6",
+      "id": 11
+    }
+  ],
+  "family_guy": [
+    {
+      "name": "Peter Griffin",
+      "age": 42,
+      "occupation": "Safety Inspector",
+      "family": {
+        "spouse": "Lois Griffin",
+        "children": [
+          "Meg",
+          "Chris",
+          "Stewie"
+        ]
+      },
+      "friends": [
+        "Glenn Quagmire",
+        "Joe Swanson",
+        "Cleveland Brown"
+      ]
+    },
+    {
+      "name": "Lois Griffin",
+      "age": 40,
+      "occupation": "Housewife",
+      "family": {
+        "spouse": "Peter Griffin",
+        "children": [
+          "Meg",
+          "Chris",
+          "Stewie"
+        ]
+      },
+      "friends": [
+        "Bonnie Swanson",
+        "Tricia Takanawa"
+      ]
+    },
+    {
+      "name": "Stewie Griffin",
+      "age": 2,
+      "occupation": "Evil Genius",
+      "family": {
+        "parents": [
+          "Peter Griffin",
+          "Lois Griffin"
+        ],
+        "siblings": [
+          "Meg",
+          "Chris"
+        ]
+      },
+      "pet": "Brian Griffin"
+    },
+    {
+      "name": "Brian Griffin",
+      "age": 8,
+      "occupation": "Writer",
+      "family": {
+        "owner": "Peter Griffin",
+        "siblings": [
+          "Stewie"
+        ]
+      },
+      "friends": [
+        "Glenn Quagmire"
+      ]
+    },
+    {
+      "name": "Meg Griffin",
+      "age": 18,
+      "occupation": "High School Student",
+      "family": {
+        "parents": [
+          "Peter Griffin",
+          "Lois Griffin"
+        ],
+        "siblings": [
+          "Chris",
+          "Stewie"
+        ]
+      },
+      "crush": "Neil Goldman"
+    }
+  ],
+  "users": [
+    {
+      "id": "asantekwasi500@gmail.com",
+      "channelId": "topboyasante's"
+    }
+  ],
+  "channels": [
+    {
+      "id": "topboyasante's",
+      "courses": [
+        "html",
+        "css",
+        "js"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "colorName": "Red",
+      "colorCode": "#FF5733"
+    },
+    {
+      "id": 2,
+      "colorName": "Blue",
+      "colorCode": "#3498DB"
+    },
+    {
+      "id": 3,
+      "colorName": "Green",
+      "colorCode": "#2ECC71"
+    },
+    {
+      "id": 4,
+      "colorName": "Purple",
+      "colorCode": "#9B59B6"
+    },
+    {
+      "id": 5,
+      "colorName": "Yellow",
+      "colorCode": "#F1C40F"
+    },
+    {
+      "id": 6,
+      "colorName": "Orange",
+      "colorCode": "#E67E22"
+    },
+    {
+      "id": 7,
+      "colorName": "Turquoise",
+      "colorCode": "#1ABC9C"
+    },
+    {
+      "id": 8,
+      "colorName": "Crimson",
+      "colorCode": "#E74C3C"
     }
   ]
 }

@@ -19,6 +19,21 @@ function App() {
             <li>
               <Link to="/rq-super-heroes">RQ Super Heroes</Link>
             </li>
+            <li>
+              <Link to="/rq-parallel">Parallel Query</Link>
+            </li>
+            <li>
+              <Link to="/rq-dynamic-parallel">Dynamic Parallel Query</Link>
+            </li>
+            <li>
+              <Link to="/rq-dependent">Dependent Query</Link>
+            </li>
+            <li>
+              <Link to="/rq-paginated">Paginated Query</Link>
+            </li>
+            <li>
+              <Link to="/rq-infinite">Infinite Query</Link>
+            </li>
           </ul>
         </nav>
         <AppRoutes />
