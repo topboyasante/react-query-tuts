@@ -1,12 +1,14 @@
-import axios from "axios";
-import { useQuery,useMutation, useQueryClient } from "react-query";
+import { request } from "../utils/axios-utils";
+import { useQuery, useMutation, useQueryClient } from "react-query";
 
 const fetchSuperHeroes = () => {
-  return axios.get("http://localhost:4000/superheroes");
+  // return axios.get("http://localhost:4000/superheroes");
+  return request({url:"/superheroes"})
 };
 
 const addSuperHero = (hero) => {
-  return axios.post("http://localhost:4000/superheroes",hero);
+  // return axios.post("http://localhost:4000/superheroes", hero);
+  return request({url:"/superheroes",method:"post",data:hero}) //axios interceptors
 };
 
 export function useSuperHeroesData(onSuccess, onError) {
@@ -30,17 +32,44 @@ export function useSuperHeroesData(onSuccess, onError) {
   });
 }
 
-export function useAddSuperHeroData(){
-  const queryClient = useQueryClient()
-  return useMutation(addSuperHero,{
-    onSuccess: (data)=>{
-      // queryClient.invalidateQueries("super-heroes") //query invalidation
-      queryClient.setQueryData("super-heroes",(oldQueryData)=>{
-        return {
-          ...oldQueryData,
-          data:[...oldQueryData.data, data.data]
+export function useAddSuperHeroData() {
+  const queryClient = useQueryClient();
+  return useMutation(addSuperHero, {
+    // onSuccess: (data)=>{
+    //   // queryClient.invalidateQueries("super-heroes") //query invalidation
+    //   queryClient.setQueryData("super-heroes",(oldQueryData)=>{
+    //     return {
+    //       ...oldQueryData,
+    //       data:[...oldQueryData.data, data.data]
+    //     }
+    //   })
+    // }
+
+    onMutate: async (newHero) => {
+      await queryClient.cancelQueries("super-heroes"); // cancel all queries
+      const prevData = queryClient.getQueryData(
+        "super-heroes",
+        (oldQueryData) => {
+          return {
+            ...oldQueryData,
+            data: [
+              ...oldQueryData.data,
+              { id: oldQueryData?.data.length + 1, ...newHero },
+            ],
+          };
         }
-      })
+      ); 
+      return{
+        prevData
+      }//get previous data
+    },
+
+    onError: (_error,_hero,context) => {
+      queryClient.setQueryData('super-heroes', context.prevData)
+    },
+
+    onSettled:()=>{
+      queryClient.invalidateQueries("super-heroes")
     }
-  })
+  });
 }
